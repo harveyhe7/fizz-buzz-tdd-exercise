@@ -22,4 +22,13 @@ public class FizzBuzzGameTest {
         // Then it should return "Fizz"
         assertEquals("Fizz", result);
     }
+    @Test
+    void given_multiply_of_5_when_countOff_then_return_Buzz() {
+        // Given a number that is a multiple of 5
+        FizzBuzzGame fizzBuzzGame = new FizzBuzzGame();
+        // When countOff is called with 5
+        String result = fizzBuzzGame.countOff(5);
+        // Then it should return "Buzz"
+        assertEquals("Buzz", result);
+    }
 }
