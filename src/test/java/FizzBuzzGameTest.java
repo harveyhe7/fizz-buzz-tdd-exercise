@@ -39,6 +39,15 @@ public class FizzBuzzGameTest {
         assertEquals("FizzBuzz", result);
     }
 
+    @Test
+    void given_multiply_of_7_when_countOff_then_return_Whizz() {
+        // Given
+        String result = getReturnResult(7);
+        // When countOff
+        // Then it should return "Whizz"
+        assertEquals("Whizz", result);
+    }
+
     private String getReturnResult(int i) {
         FizzBuzzGame fizzBuzzGame = new FizzBuzzGame();
         return fizzBuzzGame.countOff(i);
