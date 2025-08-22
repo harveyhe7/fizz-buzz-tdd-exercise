@@ -48,6 +48,24 @@ public class FizzBuzzGameTest {
         assertEquals("Whizz", result);
     }
 
+    @Test
+    void given_multiply_of_3_and_7_when_countOff_then_return_FizzWhizz() {
+        // Given
+        String result = getReturnResult(21);
+        // When countOff
+        // Then it should return "FizzWhizz"
+        assertEquals("FizzWhizz", result);
+    }
+
+    @Test
+    void given_multiply_of_5_and_7_when_countOff_then_return_BuzzWhizz() {
+        // Given
+        String result = getReturnResult(35);
+        // When countOff
+        // Then it should return "BuzzWhizz"
+        assertEquals("BuzzWhizz", result);
+    }
+
     private String getReturnResult(int i) {
         FizzBuzzGame fizzBuzzGame = new FizzBuzzGame();
         return fizzBuzzGame.countOff(i);
